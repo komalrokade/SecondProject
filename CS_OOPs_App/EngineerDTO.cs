@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace CS_OOPs_App
 {
-    class EngineerDTO : EmployeeDTO
+    public class EngineerDTO : EmployeeDTO
     {
         public int ProfitShare { get; set; }
         public int Alloances { get; set; }
+        public int TeamMembers { get; set; }
+        public int TeamWorkAllowance { get; set; }
     }
 }
-}
+

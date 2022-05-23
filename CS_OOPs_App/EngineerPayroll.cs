@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_OOPs_App
 {
-    class EngineerPayroll :PayrollBase
+    public class EngineerPayroll :PayrollBase
     {
         public override double CalculateTax(int netsalary)
         {
