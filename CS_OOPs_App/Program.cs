@@ -9,7 +9,7 @@ namespace CS_OOPs_App
         {
             EmployeeDTO emp = new EmployeeDTO();
             EmployeeLogic logic = new EmployeeLogic();
-            for (int i = 1; i <= 20; i++)
+            for (int i = 1; i <= 2; i++)
             {
                 Console.WriteLine("ENter EMployee Information as EmpNo, EmpName, Salary, Designation, DeptNAme in this order only");
                 // Set values for propertes
@@ -27,6 +27,7 @@ namespace CS_OOPs_App
                 //}
                 // pass data to the AddEmployee() method of Logic class
                 logic.AddEmployee(emp);
+            }
 
                 ArrayList emps = logic.GetEmployees();
                 Console.WriteLine($"EmpNo \t EmpName \t Salary \t Designation \t DeptName");
@@ -36,7 +37,8 @@ namespace CS_OOPs_App
 
                     Logger.Log(emp); // The static method
 
-
+                    Console.WriteLine( "Which employee you want to see income" );
+                    Console.ReadLine();
                     Console.WriteLine("Please press any key to calculate payroll");
                     Console.ReadLine();
                     if (emp.Designation == "Director")
@@ -67,7 +69,7 @@ namespace CS_OOPs_App
                         double tax = Engineer.CalculateTax(income);
                         Console.WriteLine($"Income of Engineer = {income} and payable tax is {tax}");
                     }
-                }
+                
 
             }
 
