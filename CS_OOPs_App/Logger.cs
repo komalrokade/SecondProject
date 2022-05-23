@@ -10,7 +10,7 @@ namespace CS_OOPs_App
     {
         public static void Log(EmployeeDTO employee)
         {
-            Console.WriteLine($"Current Processed Employee is {employee.EmpNo} {employee.EmpName} {employee.DeptName}");
+            Console.WriteLine($"{employee.EmpNo}\t {employee.EmpName}\t\t {employee.Salary} \t\t{employee.Designation} \t\t{employee.DeptName}");
         }
     }
 }

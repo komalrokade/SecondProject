@@ -12,7 +12,7 @@ namespace CS_OOPs_App
     /// </summary>
     public class EmployeeDTO
     {
-        private string[] departments = new string[] { "IT", "HR", "SL", "TR" };
+        //private string[] departments = new string[] { "IT", "HR", "SL", "TR" };
         private int _EmpNo;
         public int EmpNo
         {
@@ -46,14 +46,14 @@ namespace CS_OOPs_App
             get { return _DeptName; }
             set
             {
-                foreach (string str in departments)
-                {
-                    if (str != value)
-                    {
-                        Console.WriteLine("Sorry DeptName is Not acceptable");
-                        return;
-                    }
-                }
+                //foreach (string str in departments)
+                //{
+                //    if (str != value)
+                //    {
+                //        Console.WriteLine("Sorry DeptName is Not acceptable");
+                //        return;
+                //    }
+                //}
                 
                 _DeptName = value;
             }
